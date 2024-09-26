@@ -10,7 +10,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")  // Permite todas las rutas
-                .allowedOrigins("https://frontvue-production.up.railway.app","http://localhost:8080")  // Permite solo tu frontend
+                .allowedOrigins("https://frontvue-production.up.railway.app","http://localhost:8080","https://petcare-fe.web.app")  // Permite solo tu frontend
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")  // Métodos permitidos
                 .allowedHeaders("*")  // Permite todos los encabezados
                 .allowCredentials(true);  // Permite credenciales 2
